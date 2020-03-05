@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+
+}
+
+.header{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+}
+
+.header{
+    width: 30vw;
+    display: flex;
+    justify-content: space-evenly;
+}
