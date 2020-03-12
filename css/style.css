@@ -1,7 +1,7 @@
 /* Tipografía */
 @font-face {
-  font-family:"Open Sans Regular";
-  src:url("OpenSans-Regular.woff2") format("woff2"),url("OpenSans-Regular.woff") format("woff");
+  font-family:"Favorit";
+  src:url("/assets/fonts/favorit-light.woff2") format("woff2");
   font-style:normal;
   font-weight:400;
 }
@@ -18,7 +18,7 @@ html{box-sizing:border-box}*,::after,::before{box-sizing:inherit}blockquote,body
   --primary: #0366EE;
   --secondary: #FCB42A;
   /* Typography */
-  --font-family: "Open Sans Regular";
+  --font-family: "Favorit";
 }
 
 /****************************************
@@ -35,48 +35,40 @@ a {
 /****************************************
 *    Componentes
 *****************************************/
-
+ 
 /* Header */
 .header {
   display: flex;
   border: 1px solid var(--primary);
 }
-
 .header h1 {
   display: flex;
   justify-content: flex-end;
   width: 50vw;
-  font-family: Helvetica Neue;
-font-style: normal;
-font-weight: 300;
-font-size: 20px;
-line-height: 105%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 105%;
 }
-
 /* Nav */
 .nav ul {
   display: flex;
 }
-
 .nav ul li {
   display: flex;
   padding: 0 20px;
 }
-
 /* Main */
 .main {
   border: 1px solid var(--secondary);
 }
-
 .main p {
   font-size: 20px;
 }
-
 /* Footer */
 .footer {
   border: 1px solid var(--primary);
 }
-
 .footer p {
   font-size: 14px;
 }
