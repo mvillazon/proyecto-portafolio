@@ -1,3 +1,11 @@
+/* Tipografía */
+@font-face {
+  font-family: "favorit";
+  src: url("../assets/fonts/favorite.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
 /****************************************
 *    Variables
 *****************************************/
@@ -7,9 +15,7 @@
   --primary: #0366ee;
   --link: #0000ee;
   --hover: blue;
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  --font-family: "favorit";
 }
 
 /****************************************
@@ -63,17 +69,11 @@ ul {
   border-bottom: 1px solid black;
 }
 
-.menu ul {
-  margin-bottom: -2.5px;
-}
-
 @media screen and (min-width: 40em) {
   .menu ul {
     display: flex;
     justify-content: space-between;
     max-width: 270px;
-    font-size: 15px;
-    margin-bottom: -2px;
   }
 }
 
@@ -81,12 +81,13 @@ ul {
 .header {
   align-self: end;
   justify-self: end;
-  margin: 1em;
-  margin-bottom: 0.7em;
+}
+
+.header a {
+  font-size: 15px;
 }
 
 .site-name {
-  font-size: 15px;
   font-weight: 400;
 }
 
@@ -98,12 +99,15 @@ ul {
 /* Nav */
 .menu {
   align-self: end;
-  margin: 1em;
-  margin-bottom: 0.7em;
 }
 
-.menu ul {
-  line-height: 1.45;
+.menu ul > *:not(:last-child) {
+  line-height: 1.5;
+}
+
+.header,
+.menu {
+  padding: 10px;
 }
 
 /* Imagen */
@@ -113,9 +117,8 @@ ul {
 }
 
 .imagen-home {
-    max-width: 80vw;
-    margin: 0 auto;
-    boreder
+  max-width: 80vw;
+  margin: 0 auto;
 }
 
 /* Descripcion */
