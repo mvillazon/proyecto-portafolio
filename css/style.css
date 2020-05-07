@@ -1,7 +1,7 @@
 /* Tipografía */
 @font-face {
   font-family: "favorit";
-  src: url("../assets/fonts/favorite.woff2") format("woff2");
+  src: url("../assets/fonts/favorit.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
 }
@@ -134,6 +134,20 @@ ul {
 
 .footer p {
   font-size: 10px;
+}
+
+/* Página contacto */
+.container-contacto {
+  margin: auto;
+  text-transform: uppercase;
+  text-align: center;
+}
+.container-contacto a {
+  display: block;
+}
+
+.container-contacto a:last-of-type {
+  padding: 0.3em 0;
 }
 
 /****************************************
