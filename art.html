@@ -7,7 +7,7 @@
     <title>Arte Villazón | Art</title>
     <link
       rel="stylesheet"
-      href="https:/s3-us-west-2.amazonaws.com/s.cdpn.io/2322424/minireset.css"
+      href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2322424/minireset.css"
     />
     <link href="css/style.css" rel="stylesheet" />
   </head>
@@ -17,13 +17,14 @@
       <h1 class="site-name">
         <a href="/" rel="home">Arte Villazón</a>
       </h1>
+      <span></span>
       <nav role="navigation">
         <ul class="menu">
           <li>
-            <a href="./profile.html">Profile</a>
+            <a href="profile.html">Profile</a>
           </li>
           <li>
-            <a href="./art.html">Art</a>
+            <a href="art.html">Art</a>
           </li>
           <li>
             <a href="contacto.html">Contact</a>
@@ -31,48 +32,39 @@
         </ul>
       </nav>
     </header>
-    <div class="slider">
-      <div class="imagenes">
-        <div class="imagen actual">
-          <img src="./assets/images/01.jpg" alt="Uno" />
+    <main class="home">
+      <div class="slider">
+        <div class="imagenes">
+          <img src="./assets/images/09.png" class="imagen actual" />
+          <img src="./assets/images/01.jpg" class="imagen" />
+          <img src="./assets/images/02.jpg" class="imagen" />
+          <img src="./assets/images/03.jpg" class="imagen" />
+          <img src="./assets/images/04.jpg" class="imagen" />
+          <img src="./assets/images/05.jpg" class="imagen" />
+          <img src="./assets/images/06.jpg" class="imagen" />
+          <img src="./assets/images/07.jpg" class="imagen" />
+          <img src="./assets/images/08.jpg" class="imagen" />
+          <img src="./assets/images/10.jpg" class="imagen" />
+          <img src="./assets/images/11.jpg" class="imagen" />
         </div>
-        <div class="imagen">
-          <img src="./assets/images/02.jpg" alt="Dos" />
-        </div>
-        <div class="imagen">
-          <img src="./assets/images/03.jpg" alt="Tres" />
-        </div>
-        <div class="imagen">
-          <img src="./assets/images/04.jpg" alt="Cuatro" />
-        </div>
-        <div class="imagen">
-          <img src="./assets/images/05.jpg" alt="Cinco" />
-        </div>
-        <div class="imagen">
-          <img src="./assets/images/06.jpg" alt="Seis" />
-        </div>
-        <div class="imagen">
-          <img src="./assets/images/07.jpg" alt="Siete" />
-        </div>
-        <div class="imagen">
-          <img src="./assets/images/08.jpg" alt="Ocho" />
-        </div>
-        <div class="imagen">
-          <img src="./assets/images/09.jpg" alt="Nueve" />
-        </div>
-        <div class="imagen">
-          <img src="./assets/images/10.jpg" alt="Diez" />
-        </div>
-        <div class="imagen">
-          <img src="./assets/images/11.jpg" alt="Once" />
-        </div>
+        <button class="anterior">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12">
+            <path
+              d="M21 6.6V5.4H2.3L7.7 0H6L0 6l6 6h1.7L2.3 6.6z"
+              fill="rgb(0,0,0)"
+            />
+          </svg>
+        </button>
+        <button class="siguiente">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12">
+            <path
+              d="M0 5.4v1.2h18.7L13.3 12H15l6-6-6-6h-1.7l5.4 5.4z"
+              fill="rgb(0,0,0)"
+            />
+          </svg>
+        </button>
       </div>
-      <button class="anterior">←</button>
-      <button class="siguiente">←</button>
-    </div>
-    <!--
-        <img src="assets/images/tramas.jpg" alt="tramas" />
-        -->
+    </main>
     <footer class="footer">
       <p>ARTE VILLAZÓN - All rights reserved 2020</p>
     </footer>

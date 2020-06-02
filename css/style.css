@@ -166,22 +166,18 @@ main {
 *    TODO
 * Imagenes art 1000px height x 1300px width
 *****************************************/
+
 .slider {
-  display: flex;
-  width: 100%;
-  max-width: 50vw;
-  max-height: 50vh;
+  position: relative;
   margin: auto;
 }
 
 .imagenes {
-  width: 1000px;
-  height: 1300px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  width: 327px;
+  height: 425px;
   position: relative;
-  margin: 0 auto;
+  margin: auto;
   overflow: hidden;
-  order: 2;
 }
 
 .imagen {
@@ -201,6 +197,7 @@ main {
 .imagen.anterior {
   z-index: 10;
   transform: translatex(-100%);
+  opacity: 0;
 }
 
 .imagen.actual {
@@ -214,21 +211,42 @@ main {
 }
 
 button {
+  /*  position: absolute; 
+  height: 850px;
+  width: 325px;*/
   border: none;
-  background: transparent;
-  cursor: pointer;
+  /* cursor: none;*/
   transition: all 0.3s ease 0s;
+  z-index: 20;
 }
-
+/*
 button:hover {
-  opacity: 0.5;
+  opacity: 0;
+}
+*/
+/*
+.anterior {
+  top: 0;
+  left: 0;
 }
 
-button:first-child {
-  order: 1;
+.siguiente {
+  top: 0;
+  right: 0;
+  transform: translateX(46px);
 }
+*/
 
-button:last-child {
-  order: 3;
-  transform: rotate(180deg);
+/*
+button:last-of-type {
+  position: absolute;
+  right: 0;
+  transform: translateX(46px);
+}*/
+
+@media screen and (min-width: 40em) {
+  .imagenes {
+    width: 654px;
+    height: 850px;
+  }
 }
